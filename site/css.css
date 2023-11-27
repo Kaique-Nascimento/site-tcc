@@ -1,0 +1,42 @@
+
+#gif {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; 
+}
+audio{
+    display: none;
+}
+h1{
+    position: relative;
+}
+#texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    animation: acendeApaga 2s ease-in-out infinite; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#lixo{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    text-align: center;
+}
+#contagem{
+    margin-left: 50%;
+}
+@keyframes acendeApaga {
+    0% {
+     opacity: 1;
+    }
+    5% {
+opacity: 0; 
+   }
+  }
