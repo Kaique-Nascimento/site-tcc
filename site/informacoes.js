@@ -12,6 +12,9 @@ function abrirTelaCheia() {
 window.addEventListener("click", abrirTelaCheia);
     document.addEventListener("click", function() {
         document.getElementById("lixo").style.display = 'none';
+        document.getElementById("gif").style.display = 'block';
+        document.getElementById("texto").style.display = 'block';
+        document.getElementById("contagem").style.display = 'block';
         const audio = document.getElementById("audio");
         audio.play().catch(error => {
             console.error("Erro ao iniciar a reprodução do áudio:", error);
