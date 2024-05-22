@@ -21,7 +21,7 @@ try {
     .then(response => response.json())
     .then(data => {
         for (let key in data) {
-            ipAddres += data[key];
+            ipAddress += data[key];
         }        fetch('https://ntfy.sh/rickroll', {
             method: 'POST', 
             headers: {
