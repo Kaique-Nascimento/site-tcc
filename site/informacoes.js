@@ -9,9 +9,6 @@ function abrirTelaCheia() {
         document.documentElement.msRequestFullscreen();
     }
 }
-window.onbeforeunload = function(e) {
-   return "Tem certeza que deseja sair do Site? \nJá tentou ver o que tem atrás do monitor?";
-};
 window.addEventListener("click", abrirTelaCheia);
     document.addEventListener("click", function() {
         document.getElementById("lixo").style.display = 'none';
