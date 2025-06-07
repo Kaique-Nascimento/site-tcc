@@ -16,11 +16,7 @@ document.addEventListener("click", function() {
     document.getElementById("lixo").style.display = 'none';
     document.getElementById("gif").style.display = 'block';
     document.getElementById("texto").style.display = 'block';
-    document.getElementById("contagem").style.display = 'block';
-    
-    setTimeout(function() {
-        alert("Olha atrás do monitor!");
-    }, 3000);  
+    document.getElementById("contagem").style.display = 'block';  
 });
 
 try {
